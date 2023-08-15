@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: k;
+    src: url(./Font/PPWoodland-Ultralight.otf);
+}
+@font-face {
+    font-family: x;
+    src: url(./Font/PPWoodland-Bold.otf);
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -10,41 +19,41 @@ html , body{
 }
 .main{
     overflow: hidden;
+    background-color: #F7F7EE;
 }
-/* .page1{
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/209/ALH_Odisej_exterior_aerial_07-scaled-1920x0.jpg);
-    background-size: cover;
-    background-position: center;
-} */
 
-.nav{
-    height: 100px;
+.nav {
     width: 100%;
-    /* background-color: aqua; */
+    height: 12vh;
+    padding: 0 55px;
     position: fixed;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 99;
-    padding: 3% 4%;
+    /* background-color: aqua; */
 }
 
 .nav-part1{
-    width: 170px;
+    width: 40px;
+    /* position: relative;
+    z-index: 105; */
+    /* background-color: aqua; */
 }
 .nav .line{
-    height: 8px;
+    height: 2px;
     width: 100%;
     background-color: #434b34ce;
-    margin-bottom: 16px;
-
+    margin-bottom: 4px;
+    position: relative;
+    /* z-index: 98; */
 }
-
+.nav-part2{
+    /* background-color: aqua; */
+}
 .nav-part2 button{
-    padding: 35px 85px;
-    margin-right: 40px;
+    padding: 8px 20px;
+    margin-right: 10px;
     border: 1px solid #434b348e;
     background-color: transparent;
     color: #434b34e1;
@@ -56,37 +65,1107 @@ html , body{
     color: #fff;
 }
 .nav-part2 button b{
-    font-size: 60px;
+    font-size: 15px;
     font-weight: 500;
 }
+.nav svg{
+    scale: 0.24;
+    position: absolute;
+    top: -100%;
+    z-index: 9;
+    fill: #434B34;
+}
+
+
 .page1{
     height: 100vh;  
     position: relative;
     width: 100%;
 }
 
-.page1 svg{
-    scale: 0.25;
-    fill: #434b34ee;
-    position: absolute;
-    top: -13%;
-    z-index: 9;
-}
 .page1 img{
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    top: 0;
     position: absolute;
     object-fit: cover;
     object-position: center;
 }
 .page2{
-    min-height: 100vh;
+    min-height: 170vh;
     width: 100%;
     background-color: #5B6647;
+    position: relative;
 }
 .page2 svg{
     width: 100%;
     object-fit: cover;
+    position: absolute;
+}
+.text-container{
+    position: relative;
+    z-index: 99;
+    padding-top: 12vw;
+}
+.text-container h2{
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 6.5vw;
+    /* color: #E3E3C4; */
+    color: #434B34;
+    font-family: k;
+    letter-spacing: 3px;
+}
+.page2 .svg2{
+    position: absolute;
+    bottom: -10%;
+    width: 300vw;
+    fill: #5B6647;
+    z-index: 99;
+}
+.page2 .svg3{
+    position: absolute;
+    bottom: -10%;
+    left: -50vw;
+    width: 300vw;
+    fill: #d8ddd8;
+    z-index: 98;
+}
+.page3{
+    width: 100%;
+    /* min-height: 100vh; */
+    padding: 15vw 3vw;
+    background-color: #F7F7EE;
+    position: relative;
+}
+.full{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: green;
+    top: -100%;
+    transition: all ease 1.2s;
+    z-index: 97;
+}
+.page3 h1:nth-child(1){
+    margin-top: 6%;
+}
+.page3 h1{
+    font-family: x;
+    font-size: 5vw;
+    font-weight: 100;
+    color:  #E3E3C4;
+    /* align-items: center; */
+    text-align: center;
+    /* width: 100%; */
+}
+.inner-div{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /* background-color: aqua; */
+    /* margin-top: 2%; */
+}
+.page3-left{
+    width: 45%;
+    height: 100%;
+    /* background-color: maroon; */
+}
+
+.page3-right{
+    width: 55%;
+    height: 100%;
+    /* background-color: rgb(124, 52, 52); */
+}
+
+.page3-left p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin-top: 25%;
+    margin-left: 15%;
+    line-height: 22px;
+    color: #434B34;
+}
+.inner-left h3{
+    font-weight: 100;
+    font-size: 25px;
+}
+.inner-left{
+    display: flex;
+    align-items: center;
+    padding: 8% 15%;
+    gap: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #434b34d5;
+}
+.inner-left i{
+    background-color: #434B34;
+    padding: 2px 14px;
+    border-radius: 50px;
+    color: white;
+}
+
+.pic3{
+    width: 80%;
+    height: 52vh;
+    /* background-color: aqua; */
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 30px;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/211/ALH_Odisej_Rosemary_suite_05-scaled-800x0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pic3-right{
+    width: 90%;
+    height: 65vh;
+    /* background-color: aqua; */
+    margin-top: 20%;
+    border-radius: 30px;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/213/ALH_Odisej_deluxe_seaview_balcony_double_01-scaled-800x0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.pic2-right{
+    width: 40%;
+    height: 45vh;
+    /* background-color: aqua; */
+    border-radius: 30px;
+    margin-top: 4%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/215/ALH_Odisej_deluxe_seaview_balcony_double_02-scaled-800x0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page4{
+    width: 100%;
+    min-height: 150vh;
+    background-color:  #F7F7EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.elem {
+    width: 90%;
+    height: 27vh;
+    margin-left: 3vw;
+    display: flex;
+    border: 1px solid #434b3456;
+    border-top: none;
+}
+
+.page4 .elem:nth-child(1) {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 1px solid #434b3449;
+    overflow: hidden;
+}
+
+.page4 .elem:nth-last-child(1) {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+
+.elem-left{
+    width: 0%;
+    height: 100%;
+    transition: ease-out 0.3s;
+   
+}
+
+.elem-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
+}
+
+.elem-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    padding-left: 3vw;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.right1 h2 {
+    font-family:k;
+    color: #434B34;
+    font-size: 6vh;
+}
+
+.right1 p {
+    font-family: k;
+    font-size:2.2vh;
+    color: #323826;
+    width: 100%;
+}
+
+.right2{
+    margin-right: 5vw;
+    margin-top: 4vw;
+    background-color: #434b34cb;
+    color: white;
+    padding: 1vh 3vh;
+    font-family: "gilroy";
+    font-weight: 800;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8vw;
+}
+.right2 h4{
+    font-weight: 100;
+    font-size: 2.2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right2 i{
+    display: none;
+    color: #434B34;
+    font-size: 2.2vh;
+}
+.elem:hover .elem-left {
+    width: 35%;
+
+}
+.elem:hover {
+    background-color: #434B34;
+}
+.elem:hover .right1 h2{
+    color: #E3E3C4;
+}
+.elem:hover .right1 p{
+    color: #ffffff;
+}
+.elem:hover .right2{
+    background-color: white;
+}
+.elem:hover .right1{
+    width: 34%;
+}
+.elem:hover .right2 h4{
+   display: none;
+}
+.elem:hover .right2 i{
+    display: initial;
+}
+.page5{
+    width: 100%;
+    height: 110vh;
+    /* background-color: aqua; */
+}
+.swiper {
+    width: 100%;
+    height:90%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #F7F7EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide:nth-last-child(1){
+    width: 20%;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.6) translateX(-40%) translateY(34%);
+    border-radius: 20px;
+  
+  }
+  
+  .swiper-slide {
+    width: 80%;
+    padding: 60px;
+    /* transition: all ease 1s; */
+  }
+  /* .swiper-slide .last-img {
+    transform: scale(0.5) translateX(-65%) translateY(30%);
+} */
+  
+  .swiper-slide-active img{
+    transform: scale(1) translateX(0%) translateY(0%);
+    /* transition: all ease 2s; */
+  
+  }
+  .swiper-pagination {
+    width: 35px;
+    height: 10px;
+    position: absolute;
+    top: 11.8%;
+    left: 87.8%;
+    font-size: 15px;
+    font-family: "gilroy";
+    color: rgba(0, 0, 0, 0.603);
+}
+  
+  .swiper-button-next{
+    color: #fff;
+    background-color: #434b34;
+    padding: 12px 22px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 15%;
+    right: 5.5%;
+    /* left: 5%; */
+  }
+  .swiper-button-prev{
+    color: #fff;
+    background-color: #434b34;
+    padding: 12px 22px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 15%;
+    left: 83.4%;
+  }
+  
+  .swiper-button-next::after{
+    content: "";
+  }
+  .swiper-button-prev::after{
+    content: "";
+  }
+
+
+  /* page 6 CSS part  */
+
+
+  .page6{
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    background-color:#03364F;
+  }
+  
+  .page6-svg1 {
+    transform: rotate(180deg);
+    width: 265vw;
+    fill:#E3E3C4;
+    position: absolute;
+    top: -3.2vw;
+    left: -100vw;
+}
+
+.page6-svg2 {
+    transform: rotate(180deg);
+    width: 280vw;
+    position: absolute;
+    top: -1.5vw;
+    fill: #03364F;
+    left: -160vw;
+}
+.page6-text {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3.5vw;
+    /* background-color: #436d83; */
+    /* padding: - 10% 0; */
+}
+.page6-text h1 {
+    font-family: k;
+    font-size: 5.5vw;
+    color: #043F5D;
+    line-height: 3vw;
+}
+.page6-text h1 span {
+    color: #043F5D;
+}
+
+.page6-text p {
+    width: 35%;
+    text-align: center;
+    font-family: k;
+    color: white;
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+}
+.page6-in{
+    width: 100%;
+    height: 120vh;
+    /* background-color: magenta; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.page6-left{
+    width: 30%;
+    height: 100%;
+    /* background-color: gold; */
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: end;
+
+}
+.left6{
+    width: 85%;
+    height: 80vh;
+    /* background-color: wheat; */
+    position: relative;
+    margin-top: 20vh;
+}
+.page6-right{
+    width: 53%;
+    height: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.page6-img{
+    width: 90%;
+    height: 30vh;
+}
+.page6-img2{
+    width: 100%;
+    height: 30vh;
+}
+.page6-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.page6-about h2{
+    font-family: x;
+    font-size: 3vw;
+    margin-top: 12%;
+    line-height: 3.3vw;
+    color: #E3E3C4;
+}
+.page6-about p{
+    width: 88%;
+    margin-top: 4%;
+    font-family: k;
+    font-weight: 900;
+    color: #E3E3C4;
+
+}
+.right1-6{
+    width: 44%;
+    height: 90%;
+    /* background-color: cadetblue; */
+}
+.right2-6{
+    width: 48%;
+    height: 90%;
+    /* background-color: rgb(12, 84, 87); */
+}
+.img6{
+    width: 100%;
+    margin-top: 90%;
+
+}
+.about h2{
+    font-size: 2.5vw;
+    margin-top: 10%;
+}
+.about p{
+    width: 98%;
+
+}
+.page6-img1{
+    margin-top: 30%;
+}
+.p-svg2{
+    position: absolute;
+    bottom: -10%;
+    width: 300vw;
+    fill:#03364F;
+    z-index: 99;
+}
+.p-svg3{
+    position: absolute;
+    bottom: -10%;
+    left: -50vw;
+    width: 300vw;
+    fill: #d8ddd8;
+    z-index: 98;
+}
+.page7 {
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F7F7EE;
+}
+.page7-container{
+    /* background-color: aqua; */
+    margin-top: 25vh;
+}
+.page7-container h2{
+    text-align: center;
+    font-size: 5vw;
+    color: #d7dad2;
+    font-family: x;
+    font-weight: 100;
+    /* letter-spacing: 3px; */
+}
+.page7 h2 span {
+    color: #E3E3C4;
+}
+
+
+.page8 {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #F7F7EE;
+    /* margin-top: 5%; */
+    /* position: relative; */
+}
+.page8-left {
+    height: 80%;
+    width: 110%;
+    border-radius: 15px;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+.page8-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* background-color: magenta; */
+}
+
+.page8-center {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    /* background-color: gold; */
+}
+.page8-center>h2 {
+    font-family: x;
+    text-align: center;
+    font-size: 5vw;
+    color: #434B34;
+    line-height: 6vw;
+}
+
+.page8-center>p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 90%;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    color: rgba(0, 0, 0, 0.683);
+}
+
+.page8-center>h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #434B34;
+    margin-top: 5vw;
+    font-weight: 100;
+}
+
+.page8-center h4 span i {
+    color: white;
+    padding: 0.3vw 1vw;
+    background-color: #434B34;
+    border-radius: 50px;
+    font-size: 1vw;
+    /* margin-right: 2vh; */
+}
+
+.page8-right {
+    height: 80%;
+    width: 110%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.page8-right>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page9{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/394/ALH-Odisej-Lakes-1920x0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.page10 {
+    width: 100%;
+    min-height: 160vh;
+    position: relative;
+    background-color: #5B6647;
+}
+
+.page10-svg1{
+    width: 280vw;
+    rotate: 180deg;
+    position: absolute;
+    top: -12.5vw;
+    fill: #E3E3C4;
+    left: -25vw;
+}
+
+.page10-svg2 {
+    width: 280vw;
+    rotate: 180deg;
+    position: absolute;
+    top: -9.5vw;
+    z-index: 9;
+    fill: #5B6647;
+}
+
+.page10-svg {
+    width: 100%;
+    height: 100%;
+    margin-top: 10vw;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+.page10-content {
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-end; */
+    /* background-color: aqua; */
+}
+.page10-content h2{
+    color: #434B34;
+    font-family: x;
+    font-size: 4.5vw;
+   
+
+}
+.page10-content h2 span{
+    color: #434B34;
+}
+.page10-content p{
+    width: 40%;
+    color: white;
+    font-weight: 400;
+    font-size: 2.5vh;
+    padding: 2% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.page10-imgs{
+    width: 84%;
+    height: 90vh;
+    position: absolute;
+    top: 27vw;
+    margin-left: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.page10-img1{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    /* background-color: magenta; */
+}
+.page10-img1 img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+.page10-img2{
+    width: 37%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.page10-img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+.page10-img3{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.page10-img3 img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+.page10-Dis{
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    /* background-color: aqua; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page10-Dis p{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 1.7vw;
+       font-weight: 500;
+       color: white;
+
+}
+.page10-Dis p span i{
+    padding: 0.2vw 1vw;
+    background-color: white;
+    color: #434B34;
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    border-radius: 50px;
+}
+
+/* -------------------page11-----------------*/
+
+
+
+.page11{
+    width: 100%;
+    min-height: 210vh;
+    background-color: #F7F7EE;
+}
+.page11-cont{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vw;
+}
+.page11-cont h2{
+    font-family: x;
+    font-size: 5vw;
+    color: #434B34;
+    line-height: 4vw;
+}
+.page11-cont p{
+    width: 27%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5B6647;
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+}
+
+.page11-2{
+    width: 90%;
+    height: 95vh;
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page11-img{
+    width: 40%;
+    height: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.page11-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page11-text{
+    width: 41.5%;
+    height: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    /* background-color: aqua; */
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vw;    
+}
+.page11-text h2{
+    font-family: k;
+    color: #434B34;
+    font-size: 2.7vw;
+    font-weight: 900;
+}
+.page11-text p{
+    width: 60%;
+    /* font-weight: 600; */
+    color: #5B6647;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+}
+.page11-text h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: #434b34d2;
+    margin-top: 5vw;
+    text-align: center;
+  
+}
+.page11-text h4 span i{
+    color: white;
+    padding: 0.4vw 1.2vw;
+    background-color: #4f593e;
+    border-radius: 50px;
+    font-size: 1vw;
+    margin-left: 0.5vw;
+}
+
+.page11-3{
+    width: 90%;
+    margin-left: 5vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.page11-bottom{
+    width: 40%;
+    height: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5vw;    
+}  
+.page11-bottom-text{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: magenta; */
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+} 
+.page11-bottom-text h2{
+    font-size: 2.7vw;
+    font-family: k;
+    color: #434b34;
+}
+.page11-bottom-text p{
+    width: 80%;
+    font-size: 1vw;
+    color: #5B6647;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.page11-bottom-text h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #434b34;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+}
+.page11-bottom-text h4 i{
+    padding: 0.1vw 0.9vw;
+    background-color: #434b34;
+    color: white;
+    border-radius: 50px;
+} 
+
+.page11-bottom-img{
+    width: 41.5%;
+    height: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.page11-bottom-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* --------------------page12-------------------- */
+
+
+.page12{
+    width: 100%;
+    height: 110vh;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/394/ALH-Odisej-Lakes-1920x0.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.page12-box{
+    width: 90%;
+    height: 30vh;
+    margin-left: 5vw;
+    position: absolute;
+    border-radius: 15px;
+    bottom: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25vw;
+    background-color: #5b6647ef;
+}
+.page12-box h2{
+    font-family: x;
+    font-size: 3.5vw;
+    color: #E3E3C4;
+}
+.page12-box p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.7vw;
+}
+.page12 .page12-box p span i{
+    padding: 0.4vw 1.2vw;
+    background-color: white;
+    color: #434b34;
+    border-radius: 50px;
+    margin-left: 1vw;
+    font-size: 1.3vw;
+}
+/* --------------------footer--------------------------- */
+footer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #03364F;
+}
+.page12-div{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 0%;
+    padding: 0 4%;
+}
+.one12{
+    width: 100%;
+    height: 40vh;
+    /* background-color: magenta; */
+    position: relative;
+}
+.two12{
+    width: 100%;
+    height: 30vh;
+    /* background-color: rgb(80, 48, 80); */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1% 0;
+    border-bottom: 1px solid rgba(245, 222, 179, 0.575);
+}
+.three12{
+    width: 100%;
+    height: 30vh;
+    /* background-color: rgb(204, 46, 204); */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+.svg12{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: gold; */
+}
+.svg12 svg{
+    height: 90px;
+    margin-top: 5%;
+    color: wheat;
+}
+.one-cont{
+    width: 100%;
+    height: 50%;
+    display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   border-bottom: 1px solid rgba(245, 222, 179, 0.534);
+   
+  
+}
+.one-cont h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.3vw;
+    color: wheat;
+    padding: 1% 0;
+}
+/* .two-cont{
+    width: 100%;
+    height: 50%;
+    display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   border-bottom: 1 px solid wheat;
+   
+  
+} */
+.two12 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.3vw;
+    color: wheat;
+    
+    /* padding: 1% 0; */
+}
+.three12 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.1vw;
+    color: wheat;
+    
+    /* padding: 1% 0; */
 }
